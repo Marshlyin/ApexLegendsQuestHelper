@@ -1,0 +1,22 @@
+{
+  "name": "apexlegendsquesthelper",
+  "version": "0.0.1",
+  "description": "GUI interface to help players following the quests and challenge in Apex",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marshlyin/ApexLegendsQuestHelper.git"
+  },
+  "author": "Marshlyin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marshlyin/ApexLegendsQuestHelper/issues"
+  },
+  "homepage": "https://github.com/Marshlyin/ApexLegendsQuestHelper#readme",
+  "devDependencies": {
+    "electron": "^10.1.1"
+  }
+}
