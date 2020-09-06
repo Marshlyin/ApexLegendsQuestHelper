@@ -1,5 +1,13 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
+require('./db.js')();
 require('electron-reload')(__dirname);
+
+
+
+db = connect();
+createTable(db);
+insertChal(db);
+getAll(db);
 
 function createWindow () {
   // Create the browser window.
@@ -27,6 +35,7 @@ app.whenReady().then(createWindow)
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
 app.on('window-all-closed', () => {
+  close(db)
   if (process.platform !== 'darwin') {
     app.quit()
   }
