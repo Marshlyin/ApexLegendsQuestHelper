@@ -4,7 +4,8 @@
   "description": "GUI interface to help players following the quests and challenge in Apex",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "install-app-deps"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/Marshlyin/ApexLegendsQuestHelper#readme",
   "devDependencies": {
-    "electron": "^10.1.1"
+    "electron": "^10.1.1",
+    "electron-builder": "^22.8.0"
   },
   "dependencies": {
-    "electron-reload": "^1.5.0"
+    "electron-reload": "^1.5.0",
+    "sqlite3": "^5.0.0"
   }
 }
