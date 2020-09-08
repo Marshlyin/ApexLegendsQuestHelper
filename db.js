@@ -28,8 +28,8 @@ module.exports = function() {
         }, )  
     }
 
-    this.insertChal = function(db) {
-        db.run('INSERT INTO challenges(name) VALUES ("test")', (err) => {
+    this.insertChal = function(db, value) {
+        db.run('INSERT INTO challenges(name) VALUES ("'+value+'")', (err) => {
         if (err) {
             return console.error(err.message);
         }

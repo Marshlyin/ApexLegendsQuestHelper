@@ -1,7 +1,7 @@
 {
   "name": "apexlegendsquesthelper",
   "version": "0.0.1",
-  "description": "GUI interface to help players following the quests and challenge in Apex",
+  "description": "GUI interface to help players following the quests and challenges in Apex",
   "main": "main.js",
   "scripts": {
     "start": "electron .",

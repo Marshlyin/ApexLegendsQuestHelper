@@ -1,12 +1,17 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 require('./db.js')();
 require('electron-reload')(__dirname);
 
-
+// receive message from index.html 
+ipcMain.on('asynchronous-message', (event, arg) => {
+  insertChal(db, arg)
+  
+  // send message to index.html
+  event.sender.send('asynchronous-reply', 'hello' );
+  });
 
 db = connect();
 createTable(db);
-insertChal(db);
 getAll(db);
 
 function createWindow () {
