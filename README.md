@@ -10,7 +10,7 @@ I'll may had multiple fonctionnalities in the future, such as :
 - Automaticly update some challenges thanks to those stats
 - Multiple CSS-theme
 
-For more fonctionalities, do not hesitate to make a ticket or a pull request. See [#Contributing]()
+For more fonctionalities, do not hesitate to make a ticket or a pull request. See [Contributing]()
 
 --- 
 ## Fonctionnalities 
@@ -23,3 +23,4 @@ For more fonctionalities, do not hesitate to make a ticket or a pull request. Se
 - Dark theme and nice CSS
 ---
 ## Contributing
+IDK XDD

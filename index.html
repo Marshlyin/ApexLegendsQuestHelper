@@ -27,28 +27,84 @@
        });
       };
    </script>
-    <h1>Apex Legend's Challenge List</h1>
+    <h1>Apex Legend's Challenges List</h1>
     <h2>Add a new Challenge</h2>
       <form>
-        <div class="">
+        <div class="form">
           <p>
-            <label for="type">Type : </label>
-            <select class="" name="type" multiple>
-              <option value="ranked">Ranked</option>
-              <option value="knockdown">Knockdown</option>
-              <option value="place">Place</option>
-              <option value="champion">Champion</option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-
+            <input type="number" placeholder="Number..." name="number" min="1">
+            <select class="" name="type">
+              <!-- <option value="ranked">Ranked</option> !-->
+              <option value="Knockdown">Knockdowns</option>
+              <option value="Kill">Kills</option>
+              <option value="Kill / Assist">Kills / Assists</option>
+              <option value="Damages">Damages</option>
+              <option value="Headshot">Headshot</option>  
+              <option value="Respawn">Respawn</option>            
+              <option value="Ability">Ability</option>              
+              <option value="Top">Top</option>
+            </select>
+            with
+            <select name="legend" id="legend" multiple>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Bloodhound">Bloodhound</option>
+              <option value="Caustic">Caustic</option>
+              <option value="Crypto">Crypto</option>
+              <option value="Gibraltar">Gibraltar</option>
+              <option value="Lifeline">Lifeline</option>
+              <option value="Loba">Loba</option>
+              <option value="Mirage">Mirage</option>
+              <option value="Octane">Octane</option>
+              <option value="Pathfinder">Pathfinder</option>
+              <option value="Rampart">Rampart</option>
+              <option value="Revenant">Revenant</option>
+              <option value="Wattson">Wattson</option>
+              <option value="Wraith">Wraith</option>
+            </select> / 
+            <select name="weapon" id="weapon">
+              <option value="" >Select Weapon</option>
+              <optgroup label="Assault">
+                <option value="Assault">Assault</option>
+                <option value="Flatline">Flatline</option>
+                <option value="Havok">Havok</option>
+                <option value="Hemlok">Hemlok</option>                
+                <option value="R-301">R-301</option>
+              </optgroup>
+              <optgroup label="SMG">
+                <option value="SMG">SMG</option>
+                <option value="Alternator">Alternator</option>
+                <option value="R99">R99</option>
+                <option value="Prowler">Prowler</option>
+              </optgroup>
+              <optgroup label="Heavy">
+                <option value="Heavy">Heavy</option>
+                <option value="Devotion">Devotion</option>
+                <option value="Spitfire">Spitfire</option>
+              </optgroup>
+              <optgroup label="Snipe">
+                <option value="Snipe">Snipe</option>
+                <option value="G7 Scout">G7 Scout</option>
+                <option value="Longbow">Longbow</option>
+                <option value="Triple Take">Triple Take</option>
+                <option value="Kraber">Kraber</option>
+              </optgroup>
+              <optgroup label="Shotgun">
+                <option value="Shotgun">Shotgun</option>
+                <option value="EVA8">EVA8</option>
+                <option value="Peacekeeper">Peacekeeper</option>
+                <option value="Mastiff">Mastiff</option>
+                <option value="Mozambique">Mozambique</option>
+              </optgroup>
+              <optgroup label="Gun">
+                <option value="Gun">Gun</option>
+                <option value="P2020">P2020</option>
+                <option value="RE45">RE45</option>
+                <option value="Wingman">Wingman</option>
+              </optgroup>
             </select>
           </p>
           <p>
-            <label for="name">Name : </label>
-            <input type="text" name="name" id="name"/>
+            
           </p>
           <input type="submit" value="submit" id="submit">
         </div>
